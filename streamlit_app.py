@@ -25,7 +25,7 @@ streamlit.header("Fruityvice Fruit Advice!")
 
 import requests
 
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/all")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/kiwi")
 
 #Take the JSON response and normalize it.
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
